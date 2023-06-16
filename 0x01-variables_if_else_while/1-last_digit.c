@@ -5,7 +5,7 @@
 /**
  * main - check the last digit of a given number
  *
- * Return: 0 
+ * Return: 0
  */
 
 int main(void)
