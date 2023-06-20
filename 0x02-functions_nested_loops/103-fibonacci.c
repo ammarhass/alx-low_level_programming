@@ -18,33 +18,31 @@ void print(unsigned long n)
 }
 
 /**
- * print_fibonacci - print fibonacci series
- * @n: number to stop
+ * print_even_sum - prints sum of even numbers in fibonacci series
+ *
  * Return: void
  */
-void print_fibonacci(int n)
+void print_even_sum(void)
 {
 	unsigned long first = 1;
 	unsigned long second = 1;
 	unsigned long third;
+	unsigned long sum = 0;
 	int i;
 
-	print(second);
-	_putchar(',');
-	_putchar(' ');
-
-	for (i = 2; i <= n; i++)
+	for (i = 2; third  < 4000000; i++)
 	{
 		third = first + second;
 		first = second;
 		second = third;
-		print(third);
-		if (i < n)
+
+
+		if (third % 2 == 0)
 		{
-			_putchar(',');
-			_putchar(' ');
+			sum += third;
 		}
 	}
+	print(sum);
 	_putchar('\n');
 }
 
@@ -56,6 +54,6 @@ void print_fibonacci(int n)
 
 int main(void)
 {
-	print_fibonacci(50);
+	print_even_sum();
 	return (0);
 }
