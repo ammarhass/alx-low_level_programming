@@ -1,12 +1,12 @@
-#ifndef LIST_H
-#define LIST_H
+#ifndef LIST
+#define LIST
 
-#define<stdio.h>
-#define<string.h>
-#define<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
 
 /**
- * list_t - structure contain the details of the node
+ * struct list_t - structure contain the details of the node
  *
  * @str: pointer to char
  * @len: len of the string
@@ -17,7 +17,7 @@ typedef struct list_t
 {
 	char *str;
 	int len;
-	list_t *next;
+	struct list_t *next;
 } list_t;
 
 size_t print_list(const list_t *h);
