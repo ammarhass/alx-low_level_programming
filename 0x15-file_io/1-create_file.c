@@ -10,7 +10,7 @@
 int create_file(const char *filename, char *ptr)
 {
 	int fd;
-	int w; 
+	int w;
 	int len = 0;
 
 	if (filename == NULL)
@@ -32,4 +32,3 @@ int create_file(const char *filename, char *ptr)
 
 	return (1);
 }
-
